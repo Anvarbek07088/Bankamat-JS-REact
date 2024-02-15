@@ -10,14 +10,15 @@ import Money from "./Components/IssuingMoney.jsx";
 import Header from "./Components/Header.jsx";
 import Footer from "./Components/Footer.jsx";
 import Home from "./Components/Home.jsx";
-import Home1 from "./Components/Homi1.jsx"
+import Home1 from "./Components/Homi1.jsx";
 
 function App() {
   const [code, setCode] = useState(1234);
+  const [Balans, setBalans] = useState(1000000);
 
   return (
     <>
-      <MyContext.Provider value={{code,setCode}}>
+      <MyContext.Provider value={{ code, setCode, Balans, setBalans }}>
         <Router>
           <Header />
           <main className="flex-grow ">
